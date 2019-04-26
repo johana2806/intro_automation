@@ -1,0 +1,125 @@
+{
+  "id": "19cb31bb-d060-49e9-a988-8a7f855d5987",
+  "version": "2.0",
+  "name": "yahoo",
+  "url": "https://espanol.yahoo.com",
+  "tests": [{
+    "id": "dc215ffb-435e-406a-87a9-d23618811643",
+    "name": "Caso 1",
+    "commands": [{
+      "id": "031e2a7b-5e70-446f-bdaa-a27e115f78e0",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9b0a0113-143b-479b-803b-e47b17ba910e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1366x728",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "01b54122-e519-4778-a3b0-5377790a5544",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=uh-search-box",
+      "targets": [],
+      "value": "3000"
+    }, {
+      "id": "a9a531ad-3f72-448b-8b41-16d49883f687",
+      "comment": "",
+      "command": "click",
+      "target": "id=uh-search-box",
+      "targets": [
+        ["id=uh-search-box", "id"],
+        ["name=p", "name"],
+        ["css=#uh-search-box", "css:finder"],
+        ["xpath=//input[@id='uh-search-box']", "xpath:attributes"],
+        ["xpath=//form[@id='uh-search-form']/table/tbody/tr/td/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9f95db57-109b-4ace-855c-138ef7f26b34",
+      "comment": "",
+      "command": "type",
+      "target": "id=uh-search-box",
+      "targets": [
+        ["id=uh-search-box", "id"],
+        ["name=p", "name"],
+        ["css=#uh-search-box", "css:finder"],
+        ["xpath=//input[@id='uh-search-box']", "xpath:attributes"],
+        ["xpath=//td[@id='yui_3_18_0_3_1556212295504_203']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "selenium"
+    }, {
+      "id": "bce070e4-4f6c-452f-8aed-d9b20a13869e",
+      "comment": "",
+      "command": "click",
+      "target": "id=uh-search-button",
+      "targets": [
+        ["id=uh-search-button", "id"],
+        ["css=#uh-search-button", "css:finder"],
+        ["xpath=//button[@id='uh-search-button']", "xpath:attributes"],
+        ["xpath=//td[@id='yui_3_18_0_3_1556212295504_700']/button", "xpath:idRelative"],
+        ["xpath=//td[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2bf70167-9b61-4e77-b5c3-d431330e95f3",
+      "comment": "",
+      "command": "click",
+      "target": "id=yui_3_10_0_1_1556212304447_564",
+      "targets": [
+        ["id=yui_3_10_0_1_1556212304447_564", "id"],
+        ["linkText=Selenium - Web Browser Automation", "linkText"],
+        ["css=#yui_3_10_0_1_1556212304447_564", "css:finder"],
+        ["xpath=//a[contains(text(),'Selenium - Web Browser Automation')]", "xpath:link"],
+        ["xpath=//a[@id='yui_3_10_0_1_1556212304447_564']", "xpath:attributes"],
+        ["xpath=//h3[@id='yui_3_10_0_1_1556212304447_565']/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://docs.seleniumhq.org/']", "xpath:href"],
+        ["xpath=//li/div/div/h3/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Selenium - Web Browser Automation')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win3548",
+      "windowTimeout": 2000
+    }, {
+      "id": "e00af2ec-2f15-4d59-9ab2-8c1e370f01c1",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win3548}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8c5d2f4b-c05c-40e7-9256-b1123754b6f6",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Download",
+      "targets": [
+        ["linkText=Download", "linkText"],
+        ["css=#menu_download > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Download')]", "xpath:link"],
+        ["xpath=//li[@id='menu_download']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/download/')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Download')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "89f15ff2-c37f-48d2-af8e-bcfdf6661387",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["dc215ffb-435e-406a-87a9-d23618811643"]
+  }],
+  "urls": ["https://espanol.yahoo.com/"],
+  "plugins": []
+}
